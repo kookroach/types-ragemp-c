@@ -339,7 +339,9 @@ interface EntityMp {
 	setVelocity(x: number, y: number, z: number): void;
 	setVisible(toggle: boolean, p1: boolean): void;
 	stopAnim(animation: string, animGroup: string, p2: number): void;
-	stopSynchronizedAnim(p0: number, p1: boolean): boolean;
+    stopSynchronizedAnim(p0: number, p1: boolean): boolean;
+    __attachments: any;
+    __attachmentObjects: any;
 }
 
 interface CheckpointMp extends EntityMp {
@@ -385,7 +387,8 @@ interface ObjectMp extends EntityMp {
 	setPhysicsParams(weight: number, p1: number, p2: number, p3: number, p4: number, gravity: number, p6: number,
 		p7: number, p8: number, p9: number, buoyancy: number): void;
 	setTargettable(targettable: boolean): void;
-	slide(toX: number, toY: number, toZ: number, speedX: number, speedY: number, speedZ: number, collision: boolean): boolean;
+    slide(toX: number, toY: number, toZ: number, speedX: number, speedY: number, speedZ: number, collision: boolean): boolean;
+    __attMgrData: any;
 }
 
 interface PedBaseMp extends EntityMp {
