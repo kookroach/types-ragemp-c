@@ -937,6 +937,10 @@ interface PedBaseMp extends EntityMp {
 	wasKilledByStealth(): boolean;
 	wasKilledByTakedown(): boolean;
 	wasSkeletonUpdated(): boolean;
+	animationData: {
+        	name: String,
+        	playOnStream: Boolean,
+   	 };
 }
 
 interface PedMp extends PedBaseMp {
