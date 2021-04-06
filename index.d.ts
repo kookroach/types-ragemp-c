@@ -937,7 +937,7 @@ interface PedBaseMp extends EntityMp {
 	wasKilledByStealth(): boolean;
 	wasKilledByTakedown(): boolean;
 	wasSkeletonUpdated(): boolean;
-	animationData: anmy;
+	animationData: any;
 }
 
 interface PedMp extends PedBaseMp {
