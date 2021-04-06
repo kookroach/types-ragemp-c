@@ -1081,7 +1081,6 @@ interface PlayerMp extends PedBaseMp {
 	 p5: number, p6: number, p7: boolean, p8: boolean, firingPattern: Hash): void;
 	taskVehicleShootAt(target: Handle, p2: number): void;
 	updateTaskSweepAim(entity: Handle): void;
-	animationData: any;
 }
 
 interface TextLabelMp extends EntityMp {
